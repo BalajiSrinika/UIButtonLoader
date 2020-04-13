@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bwC-mt-FQ7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Button Table View Controller-->
+        <scene sceneID="Td8-EF-mal">
+            <objects>
+                <tableViewController id="V3W-Ja-KKY" customClass="ButtonTableViewController" customModule="LoaderUIButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fXa-H1-3gL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ButtonCell" rowHeight="58" id="jXq-ld-Daw" customClass="ButtonCell" customModule="LoaderUIButton" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="58"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jXq-ld-Daw" id="VWI-Kg-4uO">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="58"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPi-PV-sl5">
+                                            <rect key="frame" x="25" y="11" width="364" height="36"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="hPi-PV-sl5" firstAttribute="leading" secondItem="VWI-Kg-4uO" secondAttribute="leadingMargin" constant="5" id="5fj-nY-wqG"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="hPi-PV-sl5" secondAttribute="trailing" constant="5" id="Ue2-qL-BS3"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="hPi-PV-sl5" secondAttribute="bottom" id="f3r-bf-6iT"/>
+                                        <constraint firstItem="hPi-PV-sl5" firstAttribute="top" secondItem="VWI-Kg-4uO" secondAttribute="topMargin" id="fU1-Pe-B4e"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lbl" destination="hPi-PV-sl5" id="gcU-vc-AAC"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="V3W-Ja-KKY" id="npn-Ac-np9"/>
+                            <outlet property="delegate" destination="V3W-Ja-KKY" id="Hxe-YU-Dzp"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="jnc-5d-mcx"/>
+                    <connections>
+                        <outlet property="butTableView" destination="fXa-H1-3gL" id="15m-mE-HlF"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XFJ-sI-Evj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="414" y="115"/>
+        </scene>
+        <!--Loading View Controller-->
+        <scene sceneID="fLj-kH-whR">
+            <objects>
+                <viewController storyboardIdentifier="ButtonId0" useStoryboardIdentifierAsRestorationIdentifier="YES" id="C5m-0H-eQD" customClass="LoadingViewController" customModule="LoaderUIButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i4j-pA-cnI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujr-LK-HlS" customClass="LoadingButton" customModule="LoaderUIButton">
+                                <rect key="frame" x="82" y="425.5" width="250" height="45"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="2SK-uq-RBt"/>
+                                    <constraint firstAttribute="height" constant="45" id="rcr-jq-1HA"/>
+                                </constraints>
+                                <state key="normal" title="Material ActivityIndicator"/>
+                                <connections>
+                                    <action selector="activityIndicatorBtnActn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8R6-Sw-spp"/>
+                                    <action selector="activityIndicatorBtnActn:" destination="C5m-0H-eQD" eventType="touchUpInside" id="VBy-Kb-ROi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ujr-LK-HlS" firstAttribute="centerX" secondItem="i4j-pA-cnI" secondAttribute="centerX" id="7Ed-uk-qD5"/>
+                            <constraint firstItem="ujr-LK-HlS" firstAttribute="centerY" secondItem="i4j-pA-cnI" secondAttribute="centerY" id="Xco-jf-ZfX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eFf-SL-LIb"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorBtn" destination="ujr-LK-HlS" id="9UH-wn-2Ub"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rEh-ZS-j9a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1122" y="115"/>
+        </scene>
+        <!--Transiction View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ButtonId2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="TransictionViewController" customModule="LoaderUIButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DLw-ko-qDQ">
+                                <rect key="frame" x="82" y="424" width="250" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgC-NS-ztu" customClass="TransitionButton" customModule="LoaderUIButton" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="48"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Transition">
+                                            <color key="titleColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="spinnerColor">
+                                                <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="disabledBackgroundColor">
+                                                <color key="value" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uSN-Se-oL6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="gGY-qM-yrQ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DLw-ko-qDQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xwo-7s-Gzf"/>
+                            <constraint firstItem="DLw-ko-qDQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ooC-Ko-i8Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YBT-np-E1I"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1801" y="115"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="KDj-ex-GDL">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LF7-Wd-qmi" customClass="SecondViewController" customModule="LoaderUIButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qlc-xG-fET">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="4rb-sc-pgz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tYz-U0-S7R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2554" y="120"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eoc-DX-aia">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bwC-mt-FQ7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2ul-nd-glh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="V3W-Ja-KKY" kind="relationship" relationship="rootViewController" id="4QG-3U-iF4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QGH-mE-xzT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-348" y="115"/>
+        </scene>
+        <!--Loading View Controller-->
+        <scene sceneID="R66-lw-mw6">
+            <objects>
+                <viewController storyboardIdentifier="ButtonId1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="exL-wD-LBf" customClass="RNLoadingViewController" customModule="LoaderUIButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2wt-Sd-M5r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Oyq-J7-oB5">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4q5-tc-402" customClass="RNLoadingButton" customModule="LoaderUIButton" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="doTap:" destination="exL-wD-LBf" eventType="touchUpInside" id="wJh-u6-Gpo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeX-mJ-EEB" customClass="RNLoadingButton" customModule="LoaderUIButton" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="80" width="300" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <state key="normal" title="Load">
+                                            <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="doTap:" destination="exL-wD-LBf" eventType="touchUpInside" id="NrI-z2-4ZQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1da-U7-SIM" customClass="RNLoadingButton" customModule="LoaderUIButton" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="160" width="300" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <state key="normal" title="Hide Text">
+                                            <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTapAction:" destination="exL-wD-LBf" eventType="touchUpInside" id="mfc-Ko-I2p"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGO-zH-xvs" customClass="RNLoadingButton" customModule="LoaderUIButton" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="240" width="300" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="doTap:" destination="exL-wD-LBf" eventType="touchUpInside" id="LhX-FO-OZh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="1nh-dd-8l6"/>
+                                    <constraint firstAttribute="width" constant="300" id="x0F-St-kWc"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Oyq-J7-oB5" firstAttribute="centerY" secondItem="2wt-Sd-M5r" secondAttribute="centerY" id="TSa-B5-D1x"/>
+                            <constraint firstItem="Oyq-J7-oB5" firstAttribute="centerX" secondItem="2wt-Sd-M5r" secondAttribute="centerX" id="r7e-lf-bJu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Edn-zG-0sj"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn1" destination="4q5-tc-402" id="bcV-n0-6ic"/>
+                        <outlet property="btn2" destination="LeX-mJ-EEB" id="tTW-rf-OzX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xqr-mC-Eka" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3267" y="120"/>
+        </scene>
+    </scenes>
+</document>
