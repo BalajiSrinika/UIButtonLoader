@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A3638DD244182CF0030AD67 /* RNLoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3638DC244182CE0030AD67 /* RNLoadingButton.swift */; };
+		3A3638DD244182CF0030AD67 /* CustomLoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3638DC244182CE0030AD67 /* CustomLoadingButton.swift */; };
 		3A3638E02441888C0030AD67 /* RNLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3638DF2441888C0030AD67 /* RNLoadingViewController.swift */; };
 		3A48B5ED24432BA10070D028 /* ButtonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A48B5EC24432BA10070D028 /* ButtonTableViewController.swift */; };
 		3A48B5EF24432E360070D028 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A48B5EE24432E360070D028 /* LoadingViewController.swift */; };
@@ -47,7 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3A3638DC244182CE0030AD67 /* RNLoadingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNLoadingButton.swift; sourceTree = "<group>"; };
+		3A3638DC244182CE0030AD67 /* CustomLoadingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLoadingButton.swift; sourceTree = "<group>"; };
 		3A3638DF2441888C0030AD67 /* RNLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNLoadingViewController.swift; sourceTree = "<group>"; };
 		3A48B5EC24432BA10070D028 /* ButtonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewController.swift; sourceTree = "<group>"; };
 		3A48B5EE24432E360070D028 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
@@ -100,12 +100,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3A3638DE244182D90030AD67 /* RNLoadingButton */ = {
+		3A3638DE244182D90030AD67 /* CustomLoaderButton */ = {
 			isa = PBXGroup;
 			children = (
-				3A3638DC244182CE0030AD67 /* RNLoadingButton.swift */,
+				3A3638DC244182CE0030AD67 /* CustomLoadingButton.swift */,
 			);
-			path = RNLoadingButton;
+			path = CustomLoaderButton;
 			sourceTree = "<group>";
 		};
 		3A48B5F2244332460070D028 /* Transition */ = {
@@ -141,7 +141,7 @@
 			path = TableVC;
 			sourceTree = "<group>";
 		};
-		3AA144A62444C01C00FF8E75 /* TransistionButton */ = {
+		3AA144A62444C01C00FF8E75 /* TransitionButton */ = {
 			isa = PBXGroup;
 			children = (
 				3AA144A02444C00E00FF8E75 /* CGRectExtension.swift */,
@@ -150,7 +150,7 @@
 				3AA1449F2444C00E00FF8E75 /* SpinerLayer.swift */,
 				3AA1449E2444C00E00FF8E75 /* TransitionButton.swift */,
 			);
-			path = TransistionButton;
+			path = TransitionButton;
 			sourceTree = "<group>";
 		};
 		3AC4DCD02440743200FECBF3 = {
@@ -176,8 +176,8 @@
 		3AC4DCDB2440743200FECBF3 /* LoaderUIButton */ = {
 			isa = PBXGroup;
 			children = (
-				3AA144A62444C01C00FF8E75 /* TransistionButton */,
-				3A3638DE244182D90030AD67 /* RNLoadingButton */,
+				3AA144A62444C01C00FF8E75 /* TransitionButton */,
+				3A3638DE244182D90030AD67 /* CustomLoaderButton */,
 				3AC4DD2524407D0D00FECBF3 /* ButtonActivityIndicator */,
 				3AC4DD1E24407AB400FECBF3 /* delegate */,
 				3AC4DD1D24407A9B00FECBF3 /* VC */,
@@ -380,7 +380,7 @@
 				3AA144A12444C00E00FF8E75 /* CustomTransitionViewController.swift in Sources */,
 				3AA144A42444C00E00FF8E75 /* SpinerLayer.swift in Sources */,
 				3A48B5EF24432E360070D028 /* LoadingViewController.swift in Sources */,
-				3A3638DD244182CF0030AD67 /* RNLoadingButton.swift in Sources */,
+				3A3638DD244182CF0030AD67 /* CustomLoadingButton.swift in Sources */,
 				3AC4DCDD2440743200FECBF3 /* AppDelegate.swift in Sources */,
 				3A48B5F124432E470070D028 /* TransictionViewController.swift in Sources */,
 				3AC4DCDF2440743200FECBF3 /* SceneDelegate.swift in Sources */,
