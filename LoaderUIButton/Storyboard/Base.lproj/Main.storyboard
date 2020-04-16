@@ -178,10 +178,10 @@
             </objects>
             <point key="canvasLocation" x="-348" y="115"/>
         </scene>
-        <!--Loading View Controller-->
+        <!--Custom Loading View Controller-->
         <scene sceneID="R66-lw-mw6">
             <objects>
-                <viewController storyboardIdentifier="ButtonId1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="exL-wD-LBf" customClass="RNLoadingViewController" customModule="LoaderUIButton" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ButtonId1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="exL-wD-LBf" customClass="CustomLoadingViewController" customModule="LoaderUIButton" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2wt-Sd-M5r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -189,7 +189,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Oyq-J7-oB5">
                                 <rect key="frame" x="57" y="298" width="300" height="300"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4q5-tc-402" customClass="RNLoadingButton" customModule="LoaderUIButton" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4q5-tc-402" customClass="CustomLoadingButton" customModule="LoaderUIButton" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <state key="normal" title="Login"/>
@@ -197,7 +197,7 @@
                                             <action selector="doTap:" destination="exL-wD-LBf" eventType="touchUpInside" id="wJh-u6-Gpo"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeX-mJ-EEB" customClass="RNLoadingButton" customModule="LoaderUIButton" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeX-mJ-EEB" customClass="CustomLoadingButton" customModule="LoaderUIButton" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="80" width="300" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <state key="normal" title="Load">
@@ -207,7 +207,7 @@
                                             <action selector="doTap:" destination="exL-wD-LBf" eventType="touchUpInside" id="NrI-z2-4ZQ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1da-U7-SIM" customClass="RNLoadingButton" customModule="LoaderUIButton" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1da-U7-SIM" customClass="CustomLoadingButton" customModule="LoaderUIButton" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="160" width="300" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <state key="normal" title="Hide Text">
@@ -217,7 +217,7 @@
                                             <action selector="buttonTapAction:" destination="exL-wD-LBf" eventType="touchUpInside" id="mfc-Ko-I2p"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGO-zH-xvs" customClass="RNLoadingButton" customModule="LoaderUIButton" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGO-zH-xvs" customClass="CustomLoadingButton" customModule="LoaderUIButton" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="240" width="300" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <state key="normal" title="Button"/>

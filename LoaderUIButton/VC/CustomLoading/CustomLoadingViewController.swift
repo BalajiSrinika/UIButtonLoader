@@ -1,5 +1,5 @@
 //
-//  RNLoadingViewController.swift
+//  CustomLoadingViewController.swift
 //  LoaderUIButton
 //
 //  Created by Sabari on 11/04/20.
@@ -8,21 +8,20 @@
 
 import UIKit
 
-class RNLoadingViewController: UIViewController {
+class CustomLoadingViewController: UIViewController {
     
-    @IBOutlet var btn1:RNLoadingButton!
-    @IBOutlet var btn2:RNLoadingButton!
+    @IBOutlet var btn1:CustomLoadingButton!
+    @IBOutlet var btn2:CustomLoadingButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-      
         // Configure State
         let disabledColor = UIColor(white: 0.673, alpha: 1.0)
         
         btn1.hideTextWhenLoading = false
         btn1.isLoading = false
-        btn1.activityIndicatorAlignment = RNActivityIndicatorAlignment.right
+        btn1.activityIndicatorAlignment = ActivityIndicatorAlignment.right
         btn1.activityIndicatorEdgeInsets = UIEdgeInsets(top: 0, left: 50, bottom: 0, right: 10)
         btn1.setTitleColor(disabledColor, for: .disabled)
         
@@ -39,7 +38,7 @@ class RNLoadingViewController: UIViewController {
         
         btn2.hideTextWhenLoading = false
         btn2.isLoading = false
-        btn2.activityIndicatorAlignment = RNActivityIndicatorAlignment.left
+        btn2.activityIndicatorAlignment = ActivityIndicatorAlignment.left
         btn2.activityIndicatorViewStyle = UIActivityIndicatorView.Style.gray
         btn2.activityIndicatorEdgeInsets = UIEdgeInsets.init(top: 0, left: 10, bottom: 0, right: 0)
         btn2.setTitle("Loading", for: UIControl.State.disabled)
@@ -47,7 +46,7 @@ class RNLoadingViewController: UIViewController {
     }
 
     
-    func randomAttributes(button:RNLoadingButton) {
+    func randomAttributes(button:CustomLoadingButton) {
         
         buttonTapAction(button)
         
@@ -57,10 +56,10 @@ class RNLoadingViewController: UIViewController {
         }
     }
     
-    @IBAction func buttonTapAction(_ button:RNLoadingButton) {
+    @IBAction func buttonTapAction(_ button:CustomLoadingButton) {
         
         button.isLoading = !button.isLoading
-        button.activityIndicatorAlignment = RNActivityIndicatorAlignment.center
+        button.activityIndicatorAlignment = ActivityIndicatorAlignment.center
         button.hideImageWhenLoading = true
         
 //        DispatchQueue.main.asyncAfter(deadline: .now() + 3.5) {
@@ -71,7 +70,7 @@ class RNLoadingViewController: UIViewController {
     }
     
     
-    @IBAction func doTap(_ sender: RNLoadingButton) {
+    @IBAction func doTap(_ sender: CustomLoadingButton) {
         
         sender.isEnabled = false
         sender.isLoading = true;

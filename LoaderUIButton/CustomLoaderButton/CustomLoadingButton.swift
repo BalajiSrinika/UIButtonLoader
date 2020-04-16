@@ -1,26 +1,25 @@
 //
-//  RNLoadingButton.swift
-//  RNLoadingButton
+
 //
 //  Created by Romilson Nunes on 06/06/14.
 //  Copyright (c) 2014 Romilson Nunes. All rights reserved.
 //
 import UIKit
-@objc public enum RNActivityIndicatorAlignment: Int {
+@objc public enum ActivityIndicatorAlignment: Int {
     case left
     case center
     case right
     
-    static func Random() ->RNActivityIndicatorAlignment {
-        let max = UInt32(RNActivityIndicatorAlignment.right.rawValue)
+    static func Random() ->ActivityIndicatorAlignment {
+        let max = UInt32(ActivityIndicatorAlignment.right.rawValue)
         let randomValue = Int(arc4random_uniform(max + 1))
-        return RNActivityIndicatorAlignment(rawValue: randomValue)!
+        return ActivityIndicatorAlignment(rawValue: randomValue)!
     }
 }
 
 
 @IBDesignable
-open class RNLoadingButton: UIButton {
+open class CustomLoadingButton: UIButton {
     
     // Loading state
     @IBInspectable
@@ -52,7 +51,7 @@ open class RNLoadingButton: UIButton {
     open var activityIndicatorEdgeInsets: UIEdgeInsets = UIEdgeInsets.zero
     
     /// Activity Indicator Alingment. Default is '.center'
-    @IBInspectable open var activityIndicatorAlignment: RNActivityIndicatorAlignment = .center {
+    @IBInspectable open var activityIndicatorAlignment: ActivityIndicatorAlignment = .center {
         didSet {
             self.setNeedsLayout()
         }
@@ -396,7 +395,7 @@ open class RNLoadingButton: UIButton {
 
 // MARK: - Observer
 
-fileprivate extension RNLoadingButton {
+fileprivate extension CustomLoadingButton {
     
     func addObservers() {
         self.addObserver(forKeyPath: "self.state")

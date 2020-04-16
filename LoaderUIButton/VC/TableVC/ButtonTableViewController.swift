@@ -11,7 +11,7 @@ import UIKit
 class ButtonTableViewController: UITableViewController {
     
     var CustomButList = ["LoadMaterialIndicator",
-                            "RNLoadingIndicator",
+                            "LoadingIndicator",
                             "TransitionLoader"
                         ]
     
